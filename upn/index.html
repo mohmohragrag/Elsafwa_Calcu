@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel Sections Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/Elsafwa_Steel.png" alt="Logo" class="logo"> <!-- تعديل مسار اللوجو -->
+        <h1>Steel Sections Weight Calculator</h1>
+        
+        <div id="upnProfilesContainer">
+            <label for="upnProfiles">Choose UPN Profile:</label>
+            <select id="upnProfiles" onchange="calculateWeight()"></select>
+        </div>
+
+        <div id="lengthContainer">
+            <label for="length">Enter Length (mm):</label>
+            <input type="number" id="length" placeholder="Length in milli" oninput="calculateWeight()">
+        </div>
+
+        <div id="result"></div>
+        <img src="images/upn.png" alt="Another Image" class="additional-image"> <!-- استخدم مسارًا صحيحًا للصورة -->
+
+        <!-- Add the button here -->
+        <button onclick="goBack()">Go Back to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript function to go back to the index page
+        function goBack() {
+            window.location.href = "https://mohmohragrag.github.io/Elsafwa_Calculator/index.html";
+        }
+    </script>
+</body>
+</html>

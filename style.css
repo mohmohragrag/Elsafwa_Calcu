@@ -1,0 +1,79 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ecef; /* لون خلفية أفتح */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px; /* زيادة الحشو */
+    border-radius: 15px; /* زوايا أكثر انسيابية */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* ظل أقوى */
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.2s; /* إضافة تأثير عند التفاعل */
+}
+
+.container:hover {
+    transform: scale(1.02); /* تكبير خفيف عند التحويم */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* مركز الشعار مع مساحة سفلية */
+    max-width: 150px; /* عرض أقصى للشعار */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* زيادة المسافة السفلية */
+    color: #333; /* لون نص أكثر عمقًا */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555; /* لون نص أفتح قليلاً */
+}
+
+select, input, button {
+    width: 100%;
+    padding: 12px; /* زيادة الحشو */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* تأثير على الحدود عند التحويم */
+}
+
+select:focus, input:focus {
+    border-color: #007bff; /* تغيير لون الحدود عند التركيز */
+    outline: none; /* إزالة الخط الخارجي */
+}
+
+button {
+    background: linear-gradient(90deg, #007bff, #0056b3); /* تدرج لوني للزر */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s; /* تأثير عند التحويم */
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f); /* تغيير التدرج عند التحويم */
+}
+
+.result {
+    text-align: center;
+    font-size: 1.5em; /* زيادة حجم الخط */
+    font-weight: bold;
+    color: #007bff; /* لون نص النتيجة */
+}
+
+img {
+    max-width: 100%;
+    margin-top: 15px; /* زيادة المسافة العلوية */
+    border-radius: 5px; /* زوايا الصورة أكثر انسيابية */
+}

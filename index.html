@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel Sections Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/Elsafwa_Steel.png" alt="Logo" class="logo"> <!-- تعديل مسار اللوجو -->
+        <h1>Steel Sections Weight Calculator</h1>
+        
+        <label for="sectionType">Select Steel Section Type:</label>
+        <select id="sectionType" onchange="showFields()">
+            <option value="">--Select--</option>
+            <option value="Steel Plates and Sheets">Steel Plates and Sheets</option>
+            <option value="Chequered Steel Plates">Chequered and Pine Steel Plates</option> <!-- الصاج البقلاوه -->
+            <option value="Seamless Steel Pipes - Circular">ERW Steel Pipes - Circular</option>
+            <option value="Hollow Structural Sections - Square">Hollow Structural Sections - Square</option>
+            <option value="Hollow Structural Sections - Rectangular">Hollow Structural Sections - Rectangular</option>
+            <option value="Round Steel Bars">Round Steel Bars</option>
+            <option value="Square Steel Bars">Square Steel Bars</option>
+            <option value="Flat Bars">Flat Bars</option>
+            <option value="Equal Angles">Equal Angles</option>
+            <option value="Unequal Angles">Unequal Angles</option>
+            <option value="T-profile">T-profile</option>
+            <option value="Hexagonal Sections">Hexagonal Bars</option>
+            <option value="UPN">UPN</option>
+            <option value="IPN">IPN</option>
+            <option value="IPE">IPE</option>
+            <option value="HEA">HEA</option>
+            <option value="HEB">HEB</option>
+        </select>
+
+        <div id="fields" class="fields"></div>
+
+        <img id="sectionImage" src="" alt="Section Image" style="display: none;">
+
+
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

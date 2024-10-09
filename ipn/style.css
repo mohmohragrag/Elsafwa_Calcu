@@ -1,0 +1,47 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ecef; /* لون خلفية أفتح */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px; /* زيادة الحشو */
+    border-radius: 15px; /* زوايا أكثر انسيابية */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* ظل أقوى */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* مركز الشعار مع مساحة سفلية */
+    max-width: 150px; /* عرض أقصى للشعار */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* زيادة المسافة السفلية */
+    color: #333; /* لون نص أكثر عمقًا */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555; /* لون نص أفتح قليلاً */
+}
+
+#result {
+    text-align: center;
+    font-size: 1.5em; /* زيادة حجم الخط */
+    font-weight: bold;
+    color: #007bff; /* لون نص النتيجة */
+}
+.additional-image {
+    width: 300px; /* تحديد العرض ليكون 100 بكسل */
+    height: auto; /* لضبط الارتفاع تلقائيًا بناءً على العرض */
+    display: block;
+    margin: 20px auto; /* لجعل الصورة في المنتصف وإضافة مساحة حولها */
+}

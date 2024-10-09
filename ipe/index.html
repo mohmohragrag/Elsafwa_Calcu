@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel Sections Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/Elsafwa_Steel.png" alt="Logo" class="logo"> <!-- تعديل مسار اللوجو -->
+        <h1>Steel Sections Weight Calculator</h1>
+        
+        <div id="ipeProfilesContainer">
+            <label for="ipeProfiles">Choose IPE Profile:</label>
+            <select id="ipeProfiles" onchange="calculateWeight()"></select>
+        </div>
+
+        <div id="lengthContainer">
+            <label for="length">Enter Length (mm):</label>
+            <input type="number" id="length" placeholder="Length in milli" oninput="calculateWeight()">
+        </div>
+
+        <div id="result"></div>
+        <img src="images/ipe.png" alt="Another Image" class="additional-image"> <!-- استخدم مسارًا صحيحًا للصورة -->
+
+        <!-- زر الرجوع إلى الصفحة الرئيسية -->
+        <div class="back-button-container">
+            <button onclick="goBack()">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = "https://mohmohragrag.github.io/Elsafwa_Calculator/index.html"; // المسار الخاص بك
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
